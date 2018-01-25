@@ -191,15 +191,15 @@ class wechatCallbackapiTest
         }else if (strstr($keyword, "表情")){
             $content = "微笑：/::)\n乒乓：/:oo\n中国：".$this->bytes_to_emoji(0x1F1E8).$this->bytes_to_emoji(0x1F1F3)."\n仙人掌：".$this->bytes_to_emoji(0x1F335);
         }else if (strstr($keyword, "链接")){
-            $content = "电话号码：0755-83765566\n\n电子邮件：40012345@qq.com\n\n访问链接：<a href='http://www.qq.com/'>点此访问腾讯网</a>";
+            $content = "电话号码：18688795987\n\n电子邮件：2496791565@qq.com\n\n访问链接：<a href='http://www.xialan.tech/'>弋痕夕的自留地</a>";
         }else if (strstr($keyword, "单图文")){
             $content = array();
-            $content[] = array("Title"=>"单图文标题",  "Description"=>"单图文内容", "PicUrl"=>"http://discuz.comli.com/weixin/weather/icon/cartoon.jpg", "Url" =>"http://m.cnblogs.com/?u=txw1958");
+            $content[] = array("Title"=>"阿米尔汗",  "Description"=>"最具魅力的男人", "PicUrl"=>"http://weixin.xialan.tech/uploads/images/Aamir_Khan/f.jpg", "Url" =>"http://m.cnblogs.com/?u=txw1958");
         }else if (strstr($keyword, "图文") || strstr($keyword, "多图文")){
             $content = array();
-            $content[] = array("Title"=>"多图文1标题", "Description"=>"", "PicUrl"=>"http://discuz.comli.com/weixin/weather/icon/cartoon.jpg", "Url" =>"http://m.cnblogs.com/?u=txw1958");
-            $content[] = array("Title"=>"多图文2标题", "Description"=>"", "PicUrl"=>"http://d.hiphotos.bdimg.com/wisegame/pic/item/f3529822720e0cf3ac9f1ada0846f21fbe09aaa3.jpg", "Url" =>"http://m.cnblogs.com/?u=txw1958");
-            $content[] = array("Title"=>"多图文3标题", "Description"=>"", "PicUrl"=>"http://g.hiphotos.bdimg.com/wisegame/pic/item/18cb0a46f21fbe090d338acc6a600c338644adfd.jpg", "Url" =>"http://m.cnblogs.com/?u=txw1958");
+            $content[] = array("Title"=>"阿米尔汗一", "Description"=>"不一样的男人", "PicUrl"=>"http://weixin.xialan.tech/uploads/images/Aamir_Khan/a.jpeg", "Url" =>"http://m.cnblogs.com/?u=txw1958");
+            $content[] = array("Title"=>"阿米尔汗二", "Description"=>"才华横溢的男人", "PicUrl"=>"http://weixin.xialan.tech/uploads/images/Aamir_Khan/b.jpg", "Url" =>"http://m.cnblogs.com/?u=txw1958");
+            $content[] = array("Title"=>"阿米尔汗三", "Description"=>"非同凡响的男人", "PicUrl"=>"http://weixin.xialan.tech/uploads/images/Aamir_Khan/c.jpg", "Url" =>"http://m.cnblogs.com/?u=txw1958");
         }else if (strstr($keyword, "音乐")){
             $content = array();
             $content = array("Title"=>"最炫民族风", "Description"=>"歌手：凤凰传奇", "MusicUrl"=>"http://mascot-music.stor.sinaapp.com/zxmzf.mp3", "HQMusicUrl"=>"http://mascot-music.stor.sinaapp.com/zxmzf.mp3");
