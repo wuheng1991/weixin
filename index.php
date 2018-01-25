@@ -97,7 +97,7 @@ class wechatCallbackapiTest
         switch ($object->Event)
         {
             case "subscribe":
-                $content = "欢迎关注方倍工作室 \n请回复以下关键字：文本 表情 链接 单图文 多图文 音乐\n请按住说话 或 点击 + 再分别发送以下内容：语音 图片 小视频 我的收藏 位置";
+                $content = "欢迎关注侠岚工作室 \n请回复以下关键字：文本 表情 链接 单图文 多图文 音乐\n请按住说话 或 点击 + 再分别发送以下内容：语音 图片 小视频 我的收藏 位置";
                 if (!empty($object->EventKey)){
                     $content .= "\n来自二维码场景 ".str_replace("qrscene_","",$object->EventKey);
                 }
@@ -110,7 +110,7 @@ class wechatCallbackapiTest
                 {
                     case "COMPANY":
                         $content = array();
-                        $content[] = array("Title"=>"方倍工作室", "Description"=>"", "PicUrl"=>"http://discuz.comli.com/weixin/weather/icon/cartoon.jpg", "Url" =>"http://m.cnblogs.com/?u=txw1958");
+                        $content[] = array("Title"=>"侠岚工作室", "Description"=>"", "PicUrl"=>"http://discuz.comli.com/weixin/weather/icon/cartoon.jpg", "Url" =>"http://m.cnblogs.com/?u=txw1958");
                         break;
                     default:
                         $content = "点击菜单：".$object->EventKey;
@@ -204,7 +204,7 @@ class wechatCallbackapiTest
             $content = array();
             $content = array("Title"=>"最炫民族风", "Description"=>"歌手：凤凰传奇", "MusicUrl"=>"http://mascot-music.stor.sinaapp.com/zxmzf.mp3", "HQMusicUrl"=>"http://mascot-music.stor.sinaapp.com/zxmzf.mp3");
         }else{
-            $content = date("Y-m-d H:i:s",time())."\nOpenID：".$object->FromUserName."\n技术支持 方倍工作室";
+            $content = date("Y-m-d H:i:s",time())."\nOpenID：".$object->FromUserName."\n技术支持 侠岚工作室";
 			// $content = "";
         }
 
