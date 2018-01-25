@@ -75,7 +75,7 @@ class wechatCallbackapiTest
         switch ($object->Event)
         {
             case "subscribe":
-                $content = "欢迎关注方倍工作室";
+                $content = "欢迎关注侠岚工作室";
                 break;
             case "unsubscribe":
                 $content = "取消关注";
@@ -89,7 +89,7 @@ class wechatCallbackapiTest
     private function receiveText($object)
     {
         $keyword = trim($object->Content);
-        $content = date("Y-m-d H:i:s",time())."\n技术支持 方倍工作室";
+        $content = date("Y-m-d H:i:s",time())."\n技术支持 侠岚工作室";
         
         if(is_array($content)){
             if (isset($content[0]['PicUrl'])){
